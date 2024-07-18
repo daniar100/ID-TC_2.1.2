@@ -1,8 +1,8 @@
 {
     "_ym_synced": "{}",
-    "_ym_uid": "\"1720170781272572056\"",
-    "_ym97705468:0_reqNum": "3",
-    "daribar": "{\"currentPage\":1,\"lang\":\"ru\",\"pages\":[\"/search\",\"/\"],\"cart\":{\"ba5e98ee-12e0-4dac-9730-d15f67d51942\":{\"id\":3617,\"sku\":\"ba5e98ee-12e0-4dac-9730-d15f67d51942\",\"name\":\"Аспирин С таблетки шипучие 400 мг/240 мг №10 \",\"status\":1,\"img\":\"https://db-images.object.pscloud.io/optimized_v4_img_middle250_ba5e98ee-12e0-4dac-9730-d15f67d51942.webp\",\"dosageForm\":\"Таблетки шипучие\",\"packing\":\"10 шт.\",\"nddaNum\":\"РК-ЛС-5№011195\",\"recipeNeeded\":\"0\",\"strongRecipeNeeded\":\"0\",\"manufacturer\":\"Байер Консьюмер Кэр АГ\",\"urlKey\":\"aspirin-s-400mg-240mg-10-shipuchie\",\"needsRecipe\":false,\"countDesired\":1}}}",
-    "_ym97705468_lsid": "1387683080788",
-    "_ym_retryReqs": "{\"1\":{\"protocol\":\"https:\",\"host\":\"mc.yandex.ru\",\"resource\":\"clmap/97705468\",\"time\":1720170796750,\"counterType\":\"0\",\"params\":{\"page-url\":\"https://dev.daribar.kz/products/aspirin-s-400mg-240mg-10-shipuchie--ba5e98ee-12e0-4dac-9730-d15f67d51942\",\"pointer-click\":\"rn:206992489:x:32601:y:32882:t:6:p:AAA2AAA1AAA1:X:114:Y:633\"},\"browserInfo\":{\"u\":\"1720170781272572056\",\"v\":\"1382\",\"vf\":\"byif4b2t06iipg7pr4qs9jlnmn\",\"rqnl\":1},\"counterId\":97705468,\"ghid\":714563334,\"telemetry\":{\"gdpr\":\"14\"}}}"
+    "_ym_uid": "\"1721301832985643228\"",
+    "_ym97705468:0_reqNum": "2",
+    "daribar": "{\"currentPage\":1,\"lang\":\"ru\",\"pages\":[\"/products/aspirin-s-400mg-240mg-10-shipuchie--ba5e98ee-12e0-4dac-9730-d15f67d51942\",\"/search\",\"/\"],\"cart\":{\"ba5e98ee-12e0-4dac-9730-d15f67d51942\":{\"id\":3617,\"sku\":\"ba5e98ee-12e0-4dac-9730-d15f67d51942\",\"name\":\"Аспирин С таблетки шипучие 400 мг/240 мг №10 \",\"status\":1,\"img\":\"https://db-images.object.pscloud.io/optimized_v4_img_middle250_ba5e98ee-12e0-4dac-9730-d15f67d51942.webp\",\"dosageForm\":\"Таблетки шипучие\",\"packing\":\"10 шт.\",\"nddaNum\":\"РК-ЛС-5№011195\",\"recipeNeeded\":\"0\",\"strongRecipeNeeded\":\"0\",\"manufacturer\":\"Байер Консьюмер Кэр АГ\",\"urlKey\":\"aspirin-s-400mg-240mg-10-shipuchie\",\"needsRecipe\":false,\"countDesired\":1}}}",
+    "_ym97705468_lsid": "1400648831461",
+    "_ym_retryReqs": "{}"
 }

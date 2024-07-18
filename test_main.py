@@ -188,90 +188,17 @@ def test_dos():
             sel.click()
         else:
             print("ERROR:test_dos")
-        local_storage = page.evaluate('''() => {
-                                                        let data = {};
-                                                        for (let i = 0; i < localStorage.length; i++) {
-                                                            let key = localStorage.key(i);
-                                                            data[key] = localStorage.getItem(key);
-                                                        }
-                                                        return data;
-                                                    }''')
-        with open("storage_load6.json", 'w', encoding='utf-8') as f:
-            json.dump(local_storage, f, ensure_ascii=False, indent=4)
-        page.wait_for_timeout(2000)
-time.sleep(2)
-@allure.step("number_phone")
-def test_number_phone():
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)  # Установите headless=True, если не хотите открывать браузер
-        context = browser.new_context(**p.devices["Pixel 5"],permissions=["geolocation"],
-            geolocation={"latitude": 37.7749, "longitude": -122.4194},
-            locale='en-US')
-        page = context.new_page()
-        page.goto("https://dev.daribar.kz/checkout")
-        with open("storage_load6.json", 'r', encoding='utf-8') as f:
-            local_storage_data = json.load(f)
-        page.evaluate('''(data) => {
-                for (const key in data) {
-                    localStorage.setItem(key, data[key]);
-                    }
-                }''', local_storage_data)
-        page.reload()
-        sel = page.get_by_role("button", name="Доставка")
-        if sel:
-            sel.click()
-        else:
-            print("ERROR:test_dos")
         full_xpath = "/html/body/div/div[2]/div/div/div[2]/div[2]/form/div[1]/input"
         page.wait_for_selector(f'xpath={full_xpath}')
         input_element = page.locator(f'xpath={full_xpath}')
         input_element.clear()
-        input_element.type("77075999527")
-        local_storage = page.evaluate('''() => {
-            let data = {};
-                 for (let i = 0; i < localStorage.length; i++) {
-                      let key = localStorage.key(i);
-                      data[key] = localStorage.getItem(key);
-                                                               }
-                return data;
-            }''')
-        with open("storage_load7.json", 'w', encoding='utf-8') as f:
-            json.dump(local_storage, f, ensure_ascii=False, indent=4)
         page.wait_for_timeout(2000)
-time.sleep(2)
-@allure.step("get_cod")
-def test_click_get_cod():
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)  # Установите headless=True, если не хотите открывать браузер
-        context = browser.new_context(**p.devices["Pixel 5"],permissions=["geolocation"],
-            geolocation={"latitude": 37.7749, "longitude": -122.4194},
-            locale='en-US')
-        page = context.new_page()
-        page.goto("https://dev.daribar.kz/checkout")
-        with open("storage_load7.json", 'r', encoding='utf-8') as f:
-            local_storage_data = json.load(f)
-        page.evaluate('''(data) => {
-                        for (const key in data) {
-                            localStorage.setItem(key, data[key]);
-                            }
-                        }''', local_storage_data)
-        page.reload()
-        page.wait_for_timeout(3000)
-        sel = page.get_by_role("button", name="Доставка")
-        if sel:
-            sel.click()
-        else:
-            print("ERROR:test_dos")
-        full_xpath = "/html/body/div/div[2]/div/div/div[2]/div[2]/form/div[1]/input"
-        page.wait_for_selector(f'xpath={full_xpath}')
-        input_element = page.locator(f'xpath={full_xpath}')
-        input_element.clear()
         input_element.type("77075999527")
+        page.wait_for_timeout(2000)
         sel = page.locator(".AuthorizationModal_submitButton__MIgUD")
         sel.click()
         page.wait_for_timeout(5000)
-        arr = ["1","2","8","9"]
-
+        arr = ["1", "2", "8", "9"]
         d1 = page.query_selector('[data-id="0"]')
         d1.click()
         d1.fill(arr[0])
@@ -286,19 +213,26 @@ def test_click_get_cod():
         d4.fill(arr[3])
         page.wait_for_timeout(2000)
         page.get_by_text("Подтвердить").click()
+        sel2 = page.get_by_text("Алматы улица Гоголя,20").first
+        sel2.click()
         local_storage = page.evaluate('''() => {
-                    let data = {};
-                         for (let i = 0; i < localStorage.length; i++) {
-                              let key = localStorage.key(i);
-                              data[key] = localStorage.getItem(key);
-                                                                       }
-                        return data;
-                    }''')
-        sel=page.get_by_text("Алматы улица Гоголя,20").first
-        sel.click()
-        page.wait_for_timeout(3000)
-        sel=page.get_by_text("Оформить заказ").first
-        sel.click()
-        with open("storage_load8.json", 'w', encoding='utf-8') as f:
+                                                        let data = {};
+                                                        for (let i = 0; i < localStorage.length; i++) {
+                                                            let key = localStorage.key(i);
+                                                            data[key] = localStorage.getItem(key);
+                                                        }
+                                                        return data;
+                                                    }''')
+        with open("storage_load6.json", 'w', encoding='utf-8') as f:
             json.dump(local_storage, f, ensure_ascii=False, indent=4)
         page.wait_for_timeout(2000)
+time.sleep(2)
+
+def test_dari():
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=False)  # Установите headless=True, если не хотите открывать браузер
+        context = browser.new_context(**p.devices["Pixel 5"],permissions=["geolocation"],
+            geolocation={"latitude": 37.7749, "longitude": -122.4194},
+            locale='en-US')
+        page1 = context.new_page()
+        page1.goto("https://dev.daribar.kz/")
